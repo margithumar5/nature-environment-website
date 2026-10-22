@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f8e9;
+    color: #263b28;
+    line-height: 1.7;
+}
+
+header {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+nav {
+    margin-top: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c5e1a5;
+}
+
+.hero {
+    min-height: 350px;
+    padding: 90px 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(
+        rgba(0, 45, 10, 0.55),
+        rgba(0, 45, 10, 0.55)
+    ), url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #a5d6a7;
+    color: #153d1b;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
+
+section:not(.hero) {
+    padding: 45px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #1b5e20;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 270px;
+    border-radius: 15px;
+    box-shadow: 0 4px 14px #00000018;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #2e7d32;
+    margin-bottom: 12px;
+}
+
+#about {
+    background: white;
+}
+
+#protect {
+    background: #e0f2d8;
+}
+
+footer {
+    background: #123d20;
+    color: white;
+    text-align: center;
+    padding: 22px 10px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 330px;
+    }
+}
